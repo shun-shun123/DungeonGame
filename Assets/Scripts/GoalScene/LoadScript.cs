@@ -9,7 +9,7 @@ public class LoadScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         clearTime = UnityChanMovementScript.GetTimer();
-        text.text += clearTime.ToString();
+        text.text += clearTime.ToString() + "秒";
 	}
 	
 	// Update is called once per frame

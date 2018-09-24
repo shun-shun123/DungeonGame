@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UnityChanMovementScript : MonoBehaviour {
     private static float timeCounter = 0.0f;
     private Animator animator;
-    private float speed = 3.0f;
+    private float speed = 4.0f;
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
