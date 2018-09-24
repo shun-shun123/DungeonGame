@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DoorAOpen : MonoBehaviour
 {
-
     // Use this for initialization
     void Start()
     {
@@ -14,6 +13,7 @@ public class DoorAOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
     void OnTriggerEnter(Collider other)
     {

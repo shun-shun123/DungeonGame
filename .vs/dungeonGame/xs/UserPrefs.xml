@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{27DC10E9-873F-41D6-6C5C-2CE82006DD43}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnityChanMovementScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DungeonModules/Scripts/DoorAOpen.cs">
     <Files>
       <File FileName="Assets/Scripts/CameraScript.cs" Line="16" Column="78" />
       <File FileName="Assets/Scripts/UnityChanMovementScript.cs" Line="9" Column="32" />
+      <File FileName="Assets/DungeonModules/Scripts/DoorAOpen.cs" Line="21" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
