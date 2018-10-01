@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour {
     public GameObject target;
-    private Vector3 bias;
+    private Vector3 positionBias;
+    private Vector3 rotateBias;
+    private bool isUp = false;
+    private bool isDown = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,8 +15,41 @@ public class CameraScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        ButtonControll();
         transform.rotation = target.transform.rotation;
-        bias = target.transform.forward * -2.0f + target.transform.up * 2.0f;
-        transform.position = target.transform.position + bias;
+        transform.Rotate(rotateBias);
+        positionBias = target.transform.forward * -2.0f + target.transform.up * 2.0f;
+        transform.position = target.transform.position + positionBias;
 	}
+
+    void ButtonControll() {
+        if (isUp) {
+            UpCamera();
+        }
+        if (isDown) {
+            DownCamera();
+        }
+    }
+
+    public void UnableUpCamera() {
+        isUp = false;
+    }
+
+    public void EnableUpCamera() {
+        isUp = true;
+    }
+
+    public void UnableDownCamera() {
+        isDown = false;
+    }
+    public void EnableDownCamera() {
+        isDown = true;
+    }
+
+    void UpCamera() {
+        rotateBias += new Vector3(-0.6f, 0, 0);
+    }
+    void DownCamera() {
+        rotateBias += new Vector3(0.6f, 0, 0);
+    }
 }

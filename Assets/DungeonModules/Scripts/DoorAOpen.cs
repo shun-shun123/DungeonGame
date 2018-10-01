@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DoorAOpen : MonoBehaviour
 {
+    private bool canOpen = false;
+    public GameObject controller;
     // Use this for initialization
     void Start()
     {
@@ -17,6 +19,19 @@ public class DoorAOpen : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        GetComponent<Animator>().SetTrigger("DoorATrigger");
+        // Triggerの実装
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (canOpen)
+        {
+            GetComponent<Animator>().SetTrigger("DoorATrigger");
+            GetComponent<BoxCollider>().isTrigger = true;
+        }
+    }
+
+    public void EnableToOpen() {
+        canOpen = true;
     }
 }

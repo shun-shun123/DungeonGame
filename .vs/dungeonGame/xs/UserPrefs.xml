@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{27DC10E9-873F-41D6-6C5C-2CE82006DD43}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Utils/AppUtil.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainScene/UnityChanMovementScript.cs">
     <Files>
-      <File FileName="Assets/DungeonModules/Scripts/DoorAOpen.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/MainScene/UnityChanMovementScript.cs" Line="57" Column="63" />
-      <File FileName="Assets/Scripts/GoalScene/LoadScript.cs" Line="18" Column="3" />
-      <File FileName="Assets/Scripts/Utils/AppUtil.cs" Line="5" Column="15" />
+      <File FileName="Assets/DungeonModules/Scripts/DoorAOpen.cs" Line="7" Column="34" />
+      <File FileName="Assets/Scripts/MainScene/UnityChanMovementScript.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Utils/Controller.cs" Line="17" Column="6" />
+      <File FileName="Assets/Scripts/Utils/AppUtil.cs" Line="38" Column="52" />
+      <File FileName="Assets/Scripts/Utils/QuizScript.cs" Line="23" Column="24" />
+      <File FileName="Assets/Scripts/MainScene/CameraScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

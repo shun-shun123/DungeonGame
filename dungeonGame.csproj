@@ -315,6 +315,8 @@
     <Compile Include="Assets\Scripts\MainScene\CameraScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\UnityChanMovementScript.cs" />
     <Compile Include="Assets\Scripts\Utils\AppUtil.cs" />
+    <Compile Include="Assets\Scripts\Utils\Controller.cs" />
+    <Compile Include="Assets\Scripts\Utils\QuizScript.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />

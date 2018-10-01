@@ -229,6 +229,7 @@
 'Assets/Scripts/GoalScene/LoadScript.cs'
 'Assets/Scripts/MainScene/CameraScript.cs'
 'Assets/Scripts/MainScene/UnityChanMovementScript.cs'
+'Assets/Scripts/Utils/AppUtil.cs'
 'Assets/UnityChan/Scripts/CameraController.cs'
 'Assets/UnityChan/Scripts/FaceUpdate.cs'
 'Assets/UnityChan/Scripts/IdleChanger.cs'
