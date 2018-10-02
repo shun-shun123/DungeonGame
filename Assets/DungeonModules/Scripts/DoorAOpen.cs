@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DoorAOpen : MonoBehaviour
 {
-    private bool canOpen = false;
+    // 最初から空いて欲しい扉はInspectorViewにてチェックを入れる
+    public bool canOpen = false;
     public GameObject controller;
     // Use this for initialization
     void Start()

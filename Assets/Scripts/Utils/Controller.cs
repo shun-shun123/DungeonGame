@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-
+    
     }
 
     public void CallEnableToOpen() {
@@ -37,12 +37,11 @@ public class Controller : MonoBehaviour{
         RaycastHit hit;
         int distance = 500;
         Debug.DrawRay(ray.origin, ray.direction * distance, Color.red, 3, true);
-
         if (Physics.Raycast(ray, out hit, distance))
         {
-            if (hit.collider.gameObject.CompareTag("Quiz"))
+            if (hit.collider.gameObject.CompareTag("Quiz") && (hit.collider.gameObject == quizes[0] || hit.collider.gameObject == quizes[1] || hit.collider.gameObject == quizes[2]))
             {
-                Debug.Log("クイズに当たりました");
+                Debug.Log(name + "のクイズに当たりました");
                 hit.collider.gameObject.SendMessage("SetClear");
                 CallEnableToOpen();
             }
