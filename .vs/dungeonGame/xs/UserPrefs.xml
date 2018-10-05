@@ -4,11 +4,11 @@
       <File FileName="Assets/DungeonModules/Scripts/DoorAOpen.cs" Line="38" Column="2" />
       <File FileName="Assets/Scripts/MainScene/UnityChanMovementScript.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/Utils/Controller.cs" Line="46" Column="65" />
-      <File FileName="Assets/Scripts/MainScene/CameraScript.cs" Line="53" Column="9" />
-      <File FileName="Assets/Scripts/Quiz/Questions.cs" Line="20" Column="86" />
-      <File FileName="Assets/Scripts/Utils/QuizScript.cs" Line="20" Column="58" />
+      <File FileName="Assets/Scripts/MainScene/CameraScript.cs" Line="20" Column="39" />
+      <File FileName="Assets/Scripts/Quiz/Questions.cs" Line="22" Column="83" />
+      <File FileName="Assets/Scripts/Utils/QuizScript.cs" Line="20" Column="50" />
       <File FileName="Assets/Scripts/MainScene/TorchScript.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Quiz/QuestionMaker.cs" Line="9" Column="38" NotebookId="1" />
+      <File FileName="Assets/Scripts/Quiz/QuestionMaker.cs" Line="19" Column="9" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
