@@ -6,7 +6,6 @@ public class DoorAOpen : MonoBehaviour
 {
     // 最初から空いて欲しい扉はInspectorViewにてチェックを入れる
     public bool canOpen = false;
-    public GameObject controller;
     // Use this for initialization
     void Start()
     {
@@ -29,6 +28,7 @@ public class DoorAOpen : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("DoorATrigger");
             GetComponent<BoxCollider>().isTrigger = true;
+            GetComponent<TorchScript>().SetAnimStart();
         }
     }
 

@@ -313,7 +313,10 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\GoalScene\LoadScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\MainScene\TorchScript.cs" />
     <Compile Include="Assets\Scripts\MainScene\UnityChanMovementScript.cs" />
+    <Compile Include="Assets\Scripts\Quiz\QuestionMaker.cs" />
+    <Compile Include="Assets\Scripts\Quiz\Questions.cs" />
     <Compile Include="Assets\Scripts\Utils\AppUtil.cs" />
     <Compile Include="Assets\Scripts\Utils\Controller.cs" />
     <Compile Include="Assets\Scripts\Utils\QuizScript.cs" />

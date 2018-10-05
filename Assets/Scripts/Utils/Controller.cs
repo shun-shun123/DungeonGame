@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour{
     public List<GameObject> door = new List<GameObject>();
     public GameObject[] quizes = new GameObject[3];
     public Camera camera;
+    public Canvas quizCanvas;
 	// Use this for initialization
 	void Start () {
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-    
+        CallEnableToOpen();
     }
 
     public void CallEnableToOpen() {
@@ -41,9 +43,10 @@ public class Controller : MonoBehaviour{
         {
             if (hit.collider.gameObject.CompareTag("Quiz") && (hit.collider.gameObject == quizes[0] || hit.collider.gameObject == quizes[1] || hit.collider.gameObject == quizes[2]))
             {
-                Debug.Log(name + "のクイズに当たりました");
-                hit.collider.gameObject.SendMessage("SetClear");
-                CallEnableToOpen();
+                QuestionMaker.quizBox = hit.collider.gameObject;
+                QuestionMaker.objectName = hit.collider.gameObject.name;
+                QuestionMaker.room = this.gameObject;
+                quizCanvas.gameObject.SetActive(true);
             }
         }
     }

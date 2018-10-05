@@ -7,7 +7,7 @@ public class QuizScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        DontDestroyOnLoad(this);
 	}
 	
 	// Update is called once per frame
@@ -17,6 +17,8 @@ public class QuizScript : MonoBehaviour {
 
     public void SetClear() {
         isClear = true;
+        GetComponent<Animator>().SetBool("isClear", true);
+        Debug.Log("SetClear is called");
     }
 
     public bool GetClear() {
