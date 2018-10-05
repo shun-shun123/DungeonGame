@@ -10,13 +10,14 @@ public class CameraScript : MonoBehaviour {
     private bool isDown = false;
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
         ButtonControll();
         transform.rotation = target.transform.rotation;
+        transform.Rotate(new Vector3(20.0f, 0, 0));
         transform.Rotate(rotateBias);
         positionBias = target.transform.forward * -2.0f + target.transform.up * 2.0f;
         transform.position = target.transform.position + positionBias;
