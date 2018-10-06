@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{27DC10E9-873F-41D6-6C5C-2CE82006DD43}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Quiz/QuestionMaker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainScene/CameraScript.cs">
     <Files>
       <File FileName="Assets/DungeonModules/Scripts/DoorAOpen.cs" Line="38" Column="2" />
       <File FileName="Assets/Scripts/MainScene/UnityChanMovementScript.cs" Line="12" Column="1" />
@@ -8,7 +8,7 @@
       <File FileName="Assets/Scripts/Quiz/Questions.cs" Line="22" Column="83" />
       <File FileName="Assets/Scripts/Utils/QuizScript.cs" Line="20" Column="50" />
       <File FileName="Assets/Scripts/MainScene/TorchScript.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Quiz/QuestionMaker.cs" Line="19" Column="9" NotebookId="1" />
+      <File FileName="Assets/Scripts/Quiz/QuestionMaker.cs" Line="19" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
