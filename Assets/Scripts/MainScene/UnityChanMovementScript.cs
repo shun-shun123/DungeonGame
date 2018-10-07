@@ -20,12 +20,6 @@ public class UnityChanMovementScript : MonoBehaviour
     {
         LaptopPlatformMove();
         SmartphonePlatformMove();
-        //// タッチを検知する
-        //TouchInfo touchInfo = AppUtil.GetTouch();
-        //if (touchInfo == TouchInfo.Began)
-        //{
-        //    RayCast(AppUtil.GetTouchPosition());
-        //}
         // Goal時に渡すタイマーカウント
         timeCounter += 1.0f * Time.deltaTime;
     }

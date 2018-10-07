@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoadScript : MonoBehaviour {
     private int clearTime = 0;
@@ -16,4 +17,8 @@ public class LoadScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void LoadTitle() {
+        SceneManager.LoadScene("Title");
+    }
 }

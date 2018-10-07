@@ -8,6 +8,7 @@ public class CameraScript : MonoBehaviour {
     private Vector3 rotateBias;
     private bool isUp = false;
     private bool isDown = false;
+    public static bool isFps = false;
 	// Use this for initialization
 	void Start () {
 
@@ -19,7 +20,14 @@ public class CameraScript : MonoBehaviour {
         transform.rotation = target.transform.rotation;
         transform.Rotate(new Vector3(20.0f, 0, 0));
         transform.Rotate(rotateBias);
-        positionBias = target.transform.forward * -2.0f + target.transform.up * 2.0f;
+        if (isFps)
+        {
+            positionBias = target.transform.up * 2.0f;
+        }
+        else
+        {
+            positionBias = target.transform.forward * -2.0f + target.transform.up * 2.0f;
+        }
         transform.position = target.transform.position + positionBias;
 	}
 
