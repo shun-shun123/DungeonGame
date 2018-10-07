@@ -8,6 +8,7 @@ public class QuestionMaker : MonoBehaviour {
     private static Questions questions = new Questions();
     public static GameObject quizBox;
     public static GameObject room;
+    public GameObject Recticle;
     public static string objectName;
     public Canvas quizCanvas;
     public InputField inputText;
@@ -26,13 +27,17 @@ public class QuestionMaker : MonoBehaviour {
     }
 
     public void CheckAnswer() {
-        Debug.Log("CheckAnswer is called");
         if (Questions.answers[index] == inputText.text)
         {
             quizBox.GetComponent<QuizScript>().SetClear();
             room.GetComponent<Controller>().CallEnableToOpen();
-            Debug.Log("Answer is correct");
         }
         quizCanvas.gameObject.SetActive(false);
+        Recticle.gameObject.SetActive(true);
+    }
+
+    public void ReturnGame() {
+        quizCanvas.gameObject.SetActive(false);
+        Recticle.gameObject.SetActive(true);
     }
 }

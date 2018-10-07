@@ -9,6 +9,7 @@ public class Controller : MonoBehaviour{
     public GameObject[] quizes = new GameObject[3];
     public Camera camera;
     public Canvas quizCanvas;
+    public GameObject Recticle;
 	// Use this for initialization
 	void Start () {
 
@@ -47,6 +48,7 @@ public class Controller : MonoBehaviour{
                 QuestionMaker.objectName = hit.collider.gameObject.name;
                 QuestionMaker.room = this.gameObject;
                 quizCanvas.gameObject.SetActive(true);
+                Recticle.gameObject.SetActive(false);
             }
         }
     }
