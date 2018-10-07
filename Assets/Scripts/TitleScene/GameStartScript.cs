@@ -9,6 +9,7 @@ public class GameStartScript : MonoBehaviour {
     public GameObject LoadingUi;
     public Slider slider;
     public GameObject TitleUi;
+    public GameObject Toggle;
     // Use this for initialization
 	void Start () {
         LoadingUi.SetActive(false);
@@ -22,6 +23,7 @@ public class GameStartScript : MonoBehaviour {
     public void OnClick() {
         TitleUi.SetActive(false);
         LoadingUi.SetActive(true);
+        CameraScript.isFps = Toggle.GetComponent<Toggle>().isOn;
         StartCoroutine(GameStart());
     }
 
